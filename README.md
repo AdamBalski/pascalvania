@@ -1,7 +1,7 @@
 # Docker dev environment that replicates AGH university's `pascal` server environment
 ## Motivation
 The server environment is not easy to develop on, it is not necessarily easy to view the effects and connect to the http port either (relatively). This aims to solve the problem, by reducing the need to connect to `pascal` at all, except for deployments. 
-### The workflow can be as followed:
+### The workflow can be as follows:
 
 0. Build (once)
 1. On a development session's start, run the image
