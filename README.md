@@ -1,4 +1,5 @@
 # Docker dev environment that replicates AGH university's `pascal` server environment
+## How-tos
 ### Build
 ```bash
 docker build --build-arg USERNAME=user -t pascal-dev .
@@ -11,3 +12,5 @@ docker run --rm -it -p 80:80 -v $(pwd)/home:/home/user pascal-dev
 ```bash
 REMOTE_USER=name REMOTE_HOST=pascal.somewhere.pl ./deploy.sh
 ```
+## Environment description
+Server is a `debian` with `apache2` installed with plugins: `cgi`, `userdir`, `rewrite`, `php8.2`, and `wsgi`. Check `Dockerfile` for details.
