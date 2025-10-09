@@ -26,6 +26,7 @@ RUN a2enmod cgi userdir rewrite php8.2 wsgi
 
 # Add the user
 RUN useradd -m -s /bin/bash $USERNAME
+RUN rm -rf /home/$USERNAME
 
 # Configs, port and volume
 COPY apache2-conf/ /etc/apache2/
